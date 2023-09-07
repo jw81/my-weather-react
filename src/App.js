@@ -1,16 +1,18 @@
 import React, { Component } from "react";
 import "./App.css";
 import LocationsContainer from "./components/LocationsContainer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 class App extends Component {
   render() {
     return (
-      <div className="mainContainer">
-        <div className="topHeading">
-          <h1>Locations</h1>
-        </div>
-        <LocationsContainer />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={ <LocationsContainer />}>
+          </Route>
+        </Routes>
+      </BrowserRouter>
     );
   }
 }

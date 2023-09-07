@@ -25,7 +25,10 @@ class LocationsContainer extends Component {
 
   render() {
     return (
-      <div>
+      <div className="mainContainer">
+        <div className="topHeading">
+          <h1>Locations</h1>
+        </div>
         <div className="wrapLocations">
           <ul className="listLocations">
             { this.state.locationsList.map((location) => {
