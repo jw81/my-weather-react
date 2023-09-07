@@ -6,7 +6,7 @@
   margin: 0 auto;
 }
 
-.wrapItems {
+.wrapLocations {
   position: absolute;
   bottom: 55px;
   top: 170px;
@@ -22,11 +22,11 @@
   text-align: center;
 }
 
-ul.listItems {
+ul.listLocations {
   padding: 0 30px;
 }
 
-li.item {
+li.location {
   font-family: "Times New Roman", Times, serif;
   list-style-type: none;
   font-size: 1.5em;
