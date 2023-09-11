@@ -7,7 +7,7 @@ import NoMatch from "./components/NoMatch";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Locations from "./components/Locations";
 import LocationsList from "./components/LocationsList";
-import Location from "./Location";
+import Location from "./components/Location";
 
 class App extends Component {
   render() {
