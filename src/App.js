@@ -11,7 +11,6 @@ class App extends Component {
     return (
       <Router>
         <Routes>
-          {/* <Route path="/" element={ <LocationsContainer />} /> */}
           <Route path="/locations" element={ <Locations /> }>
             <Route index element={ <LocationsList /> } />
             <Route path=":slug" element={ <Location /> } />
