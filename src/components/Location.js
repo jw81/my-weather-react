@@ -23,7 +23,16 @@ function Location() {
 
   return (
     <div style={{ padding: 20 }}>
-      { locationDetails ? locationDetails.attributes.description : 'Loading ...' }
+      { locationDetails ? 
+        <div>
+          <div>
+            { locationDetails.attributes.description }
+          </div>
+          <div>
+            { locationDetails.attributes.currentTemperature }
+          </div>
+        </div>
+        : 'Loading ...' }
     </div>
   );
 }
