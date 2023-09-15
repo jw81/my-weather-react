@@ -8,9 +8,9 @@ function Location() {
 
   useEffect(() => {
     function getLocationDetails() {
-      axios.get(`/locations/${slug}/observations`)
+      axios.get(`/locations/${slug}/observations/current`)
       .then((resp) => {
-        setLocationDetails(resp.data.data[0]);
+        setLocationDetails(resp.data.data);
       });
     }
 
